@@ -1,0 +1,4 @@
+2022-01-24 16:50:00,384 ERROR c.l.m.BaseLog4j [main] Main error message
+2022-01-24 16:50:00,386 INFO c.l.m.MyLog [main] My log info message
+2022-01-24 16:50:00,386 WARN c.l.m.MyLog [main] My log warn message
+2022-01-24 16:50:00,386 ERROR c.l.m.MyLog [main] My log error message
