@@ -26,7 +26,7 @@
         <!-- <File name="File" fileName="output.log" bufferedIO="false" advertiseURI="file://output.log"
               advertise="true">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
-        </File> -->
+        </File>  this is a test -->
     </Appenders>
 
     <Loggers>
