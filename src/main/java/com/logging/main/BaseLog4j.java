@@ -7,6 +7,9 @@ import org.apache.logging.log4j.Logger;
 // Log4j Configuration:
 // 通过Properties文件来配置日志的输出，注意配置文件的不同
 // https://logging.apache.org/log4j/2.x/manual/configuration.html
+
+// Log4j 配置相关的layout信息
+// https://logging.apache.org/log4j/2.x/manual/layouts.html
 public class BaseLog4j {
 
     // 自定义logger日志的名称
