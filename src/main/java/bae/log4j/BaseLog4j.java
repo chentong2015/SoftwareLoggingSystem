@@ -1,4 +1,4 @@
-package com.logging.main.log4j;
+package bae.log4j;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
