@@ -1,4 +1,4 @@
-package bae.logback;
+package base.logback.main;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

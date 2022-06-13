@@ -1,8 +1,12 @@
-package bae;
+package com.log4j.core;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
 
 // 通过Properties文件来配置日志的输出，注意配置文件的不同
 // https://logging.apache.org/log4j/2.x/manual/configuration.html
@@ -15,6 +19,7 @@ public class BaseLog4j {
     private static final Logger newLogger2 = LogManager.getLogger();
 
     private static void testLoggerBasic() {
+        // 判读是否开启了指定Level的日志
         if (logger.isDebugEnabled()) {
             // debug() 输出信息的形式可以格式化
             logger.debug("debug message");
@@ -28,6 +33,19 @@ public class BaseLog4j {
         // 提供的lambda expressions只有在trace enabled的时候被执行
         // logger.trace("Some long-running operation returned {}", () -> expensiveOperation());
     }
+
+    // TODO. 获取指定的日志配置文件，完成日志properties的设置
+    public void serLog4jPath() {
+        String log4JPropertyFile = "log4j.properties";
+        Properties properties = new Properties();
+        try {
+            properties.load(new FileInputStream(log4JPropertyFile));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        // PropertyConfigurator.configure(p);
+    }
+
 
     public static void main(String[] args) {
         logger.debug("Main debug message");

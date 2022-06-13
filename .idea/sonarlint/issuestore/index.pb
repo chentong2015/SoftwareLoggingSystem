@@ -1,7 +1,5 @@
 
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-c
-3src/main/java/com/logging/main/log4j/BaseLog4j.java,e\e\eec94c3316845adc60a5429ad984a618e6f3ec2b
 g
-7src/main/java/com/logging/main/logback/BaseLogback.java,3\a\3a62318094ce532b1dfb00a5eb1e7e3a21451024
+7src/main/java/bae/logback/BaseLogbackConfiguration.java,0\6\061d87b2b2dd5329a757b0614db0766ec94bb1d6
+N
+src/main/java/master/log4j.xml,4\7\478c7ac18c5ea8d0f5970ceea889b7541669acf7
