@@ -1,4 +1,4 @@
-package base.logback.main;
+package logback;
 
 public class BaseLogbackConfiguration {
 

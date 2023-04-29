@@ -1,0 +1,17 @@
+
+`	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+o
+java:S2095*"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(¹å”üÿÿÿÿ8Ù™Ÿâ•0
+@
+java:S3457"%String contains no format specifiers.(íš£Ñùÿÿÿÿ
+P	java:S125""<This block of commented-out lines of code should be removed.(´óö^
+M
+java:S1135%"2Complete the task associated to this TODO comment.(‰×±²ùÿÿÿÿ
+]	java:S125."<This block of commented-out lines of code should be removed.(±£ßÆûÿÿÿÿ8êâ•0
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(™Û¶
+H
+java:S1068"-Remove this unused "newLogger" private field.(Í÷Î±üÿÿÿÿ
+D
+java:S1068".Remove this unused "newLogger2" private field.(¾›ÒÁ
+O
+java:S1144"4Remove this unused private "testLoggerBasic" method.(¡óÖüÿÿÿÿÿ
