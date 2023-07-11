@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Log4j提供的默认配置 default configuration
+     1. A ConsoleAppender attached to the root logger
+     2. A PatternLayout set to the pattern
+     3. Log4j assigns the root logger to Level.ERROR -->
 <Configuration status="WARN">
 
-    <!-- 自定义配置文件中使用的属性变量 -->
     <Properties>
+        <!-- 自定义配置文件中使用的属性变量 -->
         <Property name="filename">target/test.log</Property>
     </Properties>
 
-    <!-- Log4j提供的默认配置 default configuration
-         1. A ConsoleAppender attached to the root logger
-         2. A PatternLayout set to the pattern
-         3. Log4j assigns the root logger to Level.ERROR -->
-
-    <!-- 提供输出的方向是Console;输出的信息格式自定义 -->
     <Appenders>
-        <!--  <Console name="Console" target="SYSTEM_OUT">
+        <!-- 提供输出的方向是Console;输出的信息格式自定义 -->
+        <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
-        </Console> -->
+        </Console>
 
+        <!-- TODO: 这里设置的文件log，即使在没有日志信息的清理下，仍然会创建文件 -->
         <File name="File" fileName="${filename}">
             <PatternLayout>
                 <pattern>%d %p %C{1.} [%t] %m%n</pattern>
             </PatternLayout>
         </File>
-
         <!-- <File name="File" fileName="output.log" bufferedIO="false" advertiseURI="file://output.log"
               advertise="true">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
@@ -30,15 +30,16 @@
     </Appenders>
 
     <Loggers>
-        <!-- 可以指定某单独类型的日志输出配置
-              设置additivity="false"，防止重复输出 -->
-        <Logger name="com.logging.main.MyLog" level="info" additivity="false">
-            <!-- <AppenderRef ref="Console"/> -->
+        <!-- 针对不同的类型使用不同的Logger级别 !!
+             可以指定某单独类型的日志输出配置
+             设置additivity="false"，防止重复输出 -->
+        <Logger name="apache.log4j.core.BaseLogTester" level="info" additivity="false">
+            <!-- 指定不同的Appender的引用名称，输出到指定的位置 -->
             <AppenderRef ref="File"/>
         </Logger>
 
         <Root level="error">
-            <AppenderRef ref="File"/>
+            <AppenderRef ref="Console"/>
         </Root>
     </Loggers>
 </Configuration>

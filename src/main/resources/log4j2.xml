@@ -33,7 +33,7 @@
         <!-- 针对不同的类型使用不同的Logger级别 !!
              可以指定某单独类型的日志输出配置
              设置additivity="false"，防止重复输出 -->
-        <Logger name="com.log4j.core.BaseLogTester" level="info" additivity="false">
+        <Logger name="apache.log4j.core.BaseLogTester" level="info" additivity="false">
             <!-- 指定不同的Appender的引用名称，输出到指定的位置 -->
             <AppenderRef ref="File"/>
         </Logger>

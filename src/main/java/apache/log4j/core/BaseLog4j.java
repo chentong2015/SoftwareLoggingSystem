@@ -1,4 +1,4 @@
-package com.log4j.core;
+package apache.log4j.core;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
