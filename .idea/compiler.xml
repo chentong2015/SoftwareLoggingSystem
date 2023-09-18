@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="LoggingProject" />
         <module name="LoggingLog4J" />
+        <module name="apache-commons-logging" />
       </profile>
     </annotationProcessing>
   </component>

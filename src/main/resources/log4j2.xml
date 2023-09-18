@@ -17,8 +17,8 @@
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
 
-        <!-- TODO: 这里设置的文件log，即使在没有日志信息的清理下，仍然会创建文件 -->
-        <File name="File" fileName="${filename}">
+        <!-- TODO: 设置log文件log，如果不存在则会创建文件 => 获取指定的日志文件，进行输出 -->
+        <File name="FileName" fileName="${filename}">
             <PatternLayout>
                 <pattern>%d %p %C{1.} [%t] %m%n</pattern>
             </PatternLayout>
