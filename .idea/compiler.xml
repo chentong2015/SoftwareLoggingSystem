@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="LoggingProject" />
+        <module name="slf4j-logback-classic" />
         <module name="LoggingLog4J" />
-        <module name="apache-commons-logging" />
+        <module name="slf4j-log4j" />
+        <module name="slf4j-commons-logging" />
+        <module name="slf4j-log4j-master" />
       </profile>
     </annotationProcessing>
   </component>

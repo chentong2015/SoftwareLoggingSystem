@@ -1,0 +1,18 @@
+Logging:
+1. Record of specific information from a programs execution, for develop and debug
+2. Logging should be detailed, configurable, reliable
+
+Logging use cases 日志的使用场景: 提高程序代码可视化, 体现程序运行时的行为
+1. Debugging during dev
+2. Diagnose bugs during production
+3. Create data for statistical use
+4. Tracing access for security use
+
+TODO. Log Level基本级别分布: 程序只会输出配置Level及以上的信息
+log.trace("Trace Message!");
+log.debug("Debug Message!");
+log.info("Info Message!");
+log.warn("Warn Message!");
+log.error("Error Message!");
+log.fatal("Fatal Message!");
+log.off("off level");
