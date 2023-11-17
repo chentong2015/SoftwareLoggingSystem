@@ -8,4 +8,10 @@
             </PatternLayout>
         </File>
     </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="console"/>
+        </Root>
+    </Loggers>
 </Configuration>
