@@ -8,7 +8,6 @@
     </appender>
 
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <!-- 日志输出文件位置: 相对路径，当前项目的根目录 -->
         <file>testFile.log</file>
         <append>true</append>
         <!-- set immediateFlush to false for much higher logging throughput -->
