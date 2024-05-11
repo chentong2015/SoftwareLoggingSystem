@@ -1,0 +1,5 @@
+2024-05-11 15:12:46,794 [main] [INFO ] logback.BaseLogback - logging info 
+2024-05-11 15:12:46,795 [main] [INFO ] logback.BaseLogback - logging place holder 
+2024-05-11 15:12:46,796 [main] [DEBUG] logback.BaseLogback - logging debug 
+2024-05-11 15:12:46,796 [main] [WARN ] logback.BaseLogback - logging warn 
+2024-05-11 15:12:46,796 [main] [ERROR] logback.BaseLogback - logging warn 

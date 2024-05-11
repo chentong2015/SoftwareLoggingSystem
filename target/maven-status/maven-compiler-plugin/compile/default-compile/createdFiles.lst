@@ -1,5 +1,0 @@
-logback\BaseLogback.class
-apache\log4j\core\BaseLog4j.class
-apache\log4j\core\BaseLogTester.class
-apache\log4j\core\BaseLoggerContext.class
-logback\BaseLogbackConfiguration.class

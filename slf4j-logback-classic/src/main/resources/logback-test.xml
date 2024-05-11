@@ -6,14 +6,14 @@
 
     <!-- 配置输出的日志文件带有时间戳标签，每次执行时输出的文件不同 -->
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>log/log_${bySecond}.log</file>
+        <file>slf4j-logback-classic/log/log_${bySecond}.log</file>
         <append>true</append>
         <encoder>
             <pattern>%date [%thread] [%-5level] %logger{40} - %message %n</pattern>
         </encoder>
     </appender>
 
-    <root level="info">
+    <root level="DEBUG">
         <appender-ref ref="FILE"/>
     </root>
 </configuration>

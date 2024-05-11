@@ -7,9 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="slf4j-logback-classic" />
+        <module name="slf4j-logback-classic-test" />
         <module name="slf4j-log4j" />
+        <module name="log4j-api-core" />
         <module name="slf4j-commons-logging" />
-        <module name="slf4j-log4j-master" />
       </profile>
     </annotationProcessing>
   </component>

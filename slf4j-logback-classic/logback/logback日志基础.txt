@@ -1,0 +1,12 @@
+TODO. Logback主要组成components
+1. Loggers   <logger></logger>    (负责获取日志信息)
+2. Appender  <appender></appender>(负责publish发布日志信息到不同输出destination): Console, File, Socket
+3. Layouts   <pattern></pattern>  (负责格式化日志信息的风格): 通过实现Layout接口可以实现更改
+4. Configurator interface         自定义要实现的配置
+
+TODO. Logback Initialization Steps: 配置在resources资源目录
+1. Find logback-test.xml in classpath
+2. Find logback.groovy in classpath
+3. Find logback.xml in classpath
+4. Resolve the implementation of Configurator interface
+5. (Default) logback configures itself automatically using BasicConfigurator, logging output to console

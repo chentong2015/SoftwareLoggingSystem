@@ -5,13 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>LoggingLog4J</artifactId>
+    <artifactId>LoggingProject</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>slf4j-log4j</module>
         <module>slf4j-logback-classic</module>
-        <module>slf4j-log4j-master</module>
+        <module>log4j-api-core</module>
+        <module>slf4j-logback-classic-test</module>
     </modules>
 
     <properties>
