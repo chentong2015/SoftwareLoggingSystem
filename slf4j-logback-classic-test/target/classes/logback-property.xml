@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
 
+    <!-- TODO. 通过System Property系统属性来动态定义文件名称 -->
     <appender name="fileAppender" class="ch.qos.logback.core.FileAppender">
         <file>${logFileDir}/${logFileName}.log</file>
         <encoder>

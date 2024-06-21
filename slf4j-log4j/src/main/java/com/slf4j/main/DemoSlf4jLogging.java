@@ -28,7 +28,8 @@ public class DemoSlf4jLogging {
         captorLoggingEvent.clear();
     }
 
-    // 测试场景: 当检测到程序中存在日志输出时，通过LogEvent来获取输出日志并判断
+    // 关于日志信息测试:
+    // 当检测到程序中存在日志输出时，通过LogEvent来获取输出日志并判断
     public static void testLogContext() {
         LoggerContext ctx = (LoggerContext) LogManager.getContext(false);
         Configuration config = ctx.getConfiguration();

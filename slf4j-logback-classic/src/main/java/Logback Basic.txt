@@ -10,3 +10,10 @@ TODO. Logback Initialization Steps: 配置在resources资源目录
 3. Find logback.xml in classpath
 4. Resolve the implementation of Configurator interface
 5. (Default) logback configures itself automatically using BasicConfigurator, logging output to console
+
+TODO. Pattern Conversion: 自定义格式转换
+http://logback.qos.ch/manual/layouts.html#conversionWord
+
+%date [%thread name] [%-5level] %logger name{40} - %message %n
+2021-03-12 13:20:22,066 [main] [INFO ] com.ctong.basic - log info
+2021-03-12 13:20:22,066 [main] [DEBUG] com.ctong.basic(这里最多显示40个字符, 超出则前面的名称省略) - log debug

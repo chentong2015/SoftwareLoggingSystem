@@ -10,9 +10,9 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
+        <module>log4j-api-core</module>
         <module>slf4j-log4j</module>
         <module>slf4j-logback-classic</module>
-        <module>log4j-api-core</module>
         <module>slf4j-logback-classic-test</module>
     </modules>
 
