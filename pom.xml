@@ -11,9 +11,11 @@
 
     <modules>
         <module>log4j-api-core</module>
+        <module>slf4j-commons-logging</module>
         <module>slf4j-log4j</module>
         <module>slf4j-logback-classic</module>
         <module>slf4j-logback-classic-test</module>
+        <module>test-logger-message</module>
     </modules>
 
     <properties>
