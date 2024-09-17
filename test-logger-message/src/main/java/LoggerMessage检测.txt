@@ -1,3 +1,7 @@
-TODO. 通过Logger中的Appender来记录日志输出事件
-1. 通过LoggingEvent事件来检测日志输出的数据
-2. 检测Event事件是否正确，不考虑Level的日志信息输出的平台(.xml配置)
+TODO. 如何检测Log日志输出的日志信息
+1. 自动Appender来记录日志输出，通过LoggingEvent事件来检测数据
+2. 检测输出事件是否正确，不考虑Level的日志信息输出的平台(.xml配置)
+3. 使用可以考虑mock Appender ?
+4. 是否可以考虑使用第三方依赖LogCaptor ?
+
+https://stackoverflow.com/questions/1827677/how-to-do-a-junit-assert-on-a-message-in-a-logger

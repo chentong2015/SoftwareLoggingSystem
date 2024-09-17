@@ -6,6 +6,7 @@ public class LoggerMessageClass {
 
     private CustomAppender customAppender;
 
+    // The root logger can collect everything of log messages
     private final Logger rootLogger = Logger.getRootLogger();
     private final Logger logger = Logger.getLogger(LoggerMessageClass.class);
 
