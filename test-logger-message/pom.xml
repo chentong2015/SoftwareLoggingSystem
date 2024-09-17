@@ -22,7 +22,6 @@
             <groupId>ch.qos.reload4j</groupId>
             <artifactId>reload4j</artifactId>
             <version>1.2.19</version>
-            <scope>compile</scope>
         </dependency>
 
         <dependency>

@@ -8,7 +8,7 @@ import java.util.List;
 
 public class CustomAppender extends AppenderSkeleton {
 
-    private final List<LoggingEvent> log = new ArrayList<>();
+    private final List<LoggingEvent> loggingEvents = new ArrayList<>();
 
     @Override
     public boolean requiresLayout() {
@@ -17,7 +17,7 @@ public class CustomAppender extends AppenderSkeleton {
 
     @Override
     protected void append(final LoggingEvent loggingEvent) {
-        log.add(loggingEvent);
+        loggingEvents.add(loggingEvent);
     }
 
     @Override
@@ -25,6 +25,6 @@ public class CustomAppender extends AppenderSkeleton {
     }
 
     public List<LoggingEvent> getLog() {
-        return new ArrayList<>(log);
+        return new ArrayList<>(loggingEvents);
     }
 }
