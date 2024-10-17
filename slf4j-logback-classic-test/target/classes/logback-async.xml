@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <Pattern>%d{yyyy/MM/dd HH:mm:ss} -%.-1level- %msg%n</Pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>myapp.log</file>
+        <encoder>
+            <pattern>%logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <!-- 配置异步输出的AsyncAppender, 必须作用到其它的Appender上 -->
+    <appender name="asyncConsoleAppender" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <appender-ref ref="consoleAppender" />
+    </appender>
+
+    <appender name="asyncFileAppender" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="FILE" />
+    </appender>
+
+
+    <root level="DEBUG">
+        <appender-ref ref="asyncFileAppender" />
+    </root>
+</configuration>

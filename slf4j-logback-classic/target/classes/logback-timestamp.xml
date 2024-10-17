@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- TODO. https://www.baeldung.com/logback -->
+    <timestamp key="bySecond" datePattern="yyyyMMdd'_'HHmmss"/>
+
+    <!-- 配置输出的日志文件带有时间戳标签，每次执行时输出的文件不同 -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>slf4j-logback-classic/log/log_${bySecond}.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%date [%thread] [%-5level] %logger{40} - %message %n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>

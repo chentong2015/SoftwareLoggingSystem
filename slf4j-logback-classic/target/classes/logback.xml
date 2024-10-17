@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
 
-    <!-- Remove the status-information from the console
-    配置取消Logback本身输出的日志信息 -->
+    <!-- TODO. 配置取消Logback本身输出的日志信息, 可能对自定义的日志系统造成影响 -->
     <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
@@ -14,7 +13,7 @@
     <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <charset>UTF-8</charset>
-            <Pattern>FofUtilities %d{yyyy/MM/dd HH:mm:ss} -%.-1level- %msg%n</Pattern>
+            <Pattern>%d{yyyy/MM/dd HH:mm:ss} -%.-1level- %msg%n</Pattern>
         </encoder>
     </appender>
 
@@ -35,13 +34,11 @@
     <logger name="org.springframework" level="DEBUG"/>
     <logger name="other.BaseLogging" level="DEBUG"/>
 
-    <logger name="logback">
-        <level value="DEBUG" />
+    <!-- TODO. 推荐直接在<logger>和<root>上设置Level标签 -->
+    <logger name="logback" level="DEBUG">
         <appender-ref ref="consoleAppender" />
     </logger>
-
-    <root>
-        <level value="DEBUG" />
+    <root level="DEBUG">
         <appender-ref ref="FILE"/>
     </root>
 </configuration>
