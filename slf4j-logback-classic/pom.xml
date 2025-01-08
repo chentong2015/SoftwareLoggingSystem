@@ -24,16 +24,18 @@
             <version>2.0.13</version>
         </dependency>
 
-        <!-- 需要同时提供logback-core和logback-classic实现 -->
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-core</artifactId>
-            <version>1.5.6</version>
-        </dependency>
+        <!-- 添加slf4j-api的实现依赖 Logback-classic -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>1.5.6</version>
         </dependency>
+
+        <!-- Logback-classic依赖于Logback-core
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.5.6</version>
+        </dependency> -->
     </dependencies>
 </project>
