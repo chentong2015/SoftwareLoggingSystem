@@ -10,8 +10,10 @@ public class BaseLogback {
         Logger logger = LoggerFactory.getLogger(BaseLogback.class);
         logger.info("logging info");
 
-        // logger支持使用{}占位符, 使用后面提供的值
+        // logger支持使用{}占位符, 替换成后续的值
         logger.info("logging {}", "place holder");
+        logger.info("logging {} for {}", "place holder", "exception");
+
         logger.debug("logging debug");
         logger.warn("logging warn");
         logger.error("logging warn");
