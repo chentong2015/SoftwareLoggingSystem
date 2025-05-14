@@ -12,3 +12,7 @@ log.warn("Warn Message!");
 log.info("Info Message!");
 log.debug("Debug Message!");
 log.trace("Trace Message!");
+
+TODO. 日志监控和分析系统
+AI-driven Cloud SIEM and log analytics for speed, scale, and security.
+https://www.sumologic.com/
