@@ -1,0 +1,15 @@
+TODO. 日志的不同Level级别:
+程序只会输出特定Level及以上的信息
+log.off("off level");       最高
+log.fatal("Fatal Message!");
+log.error("Error Message!");
+log.warn("Warn Message!");
+log.info("Info Message!");
+log.debug("Debug Message!");
+log.trace("Trace Message!"); 最低
+
+TODO. 日志的Verbose详细程度:
+通过Configuration Parameter参数来控制不同细节的信息
+verbose = 0 (Default)
+verbose = 1
+verbose = 99
