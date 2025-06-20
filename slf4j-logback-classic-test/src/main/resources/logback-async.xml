@@ -14,7 +14,6 @@
         </encoder>
     </appender>
 
-
     <!-- 配置异步输出的AsyncAppender, 必须作用到其它的Appender上 -->
     <appender name="asyncConsoleAppender" class="ch.qos.logback.classic.AsyncAppender">
         <discardingThreshold>0</discardingThreshold>
@@ -24,7 +23,6 @@
     <appender name="asyncFileAppender" class="ch.qos.logback.classic.AsyncAppender">
         <appender-ref ref="FILE" />
     </appender>
-
 
     <root level="DEBUG">
         <appender-ref ref="asyncFileAppender" />

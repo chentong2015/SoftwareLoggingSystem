@@ -16,6 +16,7 @@
         <module>slf4j-logback-classic</module>
         <module>slf4j-logback-classic-test</module>
         <module>test-logger-message</module>
+        <module>test-logger-system</module>
     </modules>
 
     <properties>

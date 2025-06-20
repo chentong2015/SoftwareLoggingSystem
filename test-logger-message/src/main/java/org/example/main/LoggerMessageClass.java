@@ -4,7 +4,7 @@ import org.apache.log4j.Logger;
 
 public class LoggerMessageClass {
 
-    private CustomAppender customAppender;
+    private final CustomAppender customAppender;
 
     // The root logger can collect everything of log messages
     private final Logger rootLogger = Logger.getRootLogger();
