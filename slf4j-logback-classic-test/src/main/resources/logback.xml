@@ -17,6 +17,7 @@
         </encoder>
     </appender>
 
+    <!-- TODO. Logger名称的匹配为前缀匹配, 直到完整的package路径 -->
     <logger name="console_com.example" additivity="false" level="INFO">
         <appender-ref ref="consoleAppender" />
     </logger>
