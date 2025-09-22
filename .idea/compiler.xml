@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="slf4j-api" />
         <module name="log4j-api-core" />
-        <module name="test-logger-system" />
         <module name="slf4j-logback-classic" />
         <module name="test-logger-message" />
         <module name="slf4j-logback-classic-test" />
         <module name="slf4j-commons-logging" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="test-logger-system" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

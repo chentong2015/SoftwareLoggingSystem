@@ -13,3 +13,11 @@ TODO. 日志的Verbose详细程度:
 verbose = 0 (Default)
 verbose = 1
 verbose = 99
+
+TODO. 通常日志中WRAN(warning)提示不需修复，特殊情况除外
+如果程序中将抛出的异常"吞噬"并且将其转换成warn输出，则会导致日志中忽略原本的错误
+try {
+    runSomeCodes();
+} catch(HibernateException exception) {
+    Logger.warn("warning message !");
+}

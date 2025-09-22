@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>LoggingSystemProject</artifactId>
+    <artifactId>SoftwareLoggingSystem</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
@@ -16,7 +16,6 @@
         <module>slf4j-logback-classic</module>
         <module>slf4j-logback-classic-test</module>
         <module>test-logger-message</module>
-        <module>test-logger-system</module>
     </modules>
 
     <properties>
