@@ -19,8 +19,7 @@
 
     <dependencies>
         <!-- TODO. Commons Logging 本质上是Logging Facade API
-             默认使用java.util.logging(JUL)日志实现
-             可自定义日志实现的依赖log4j, logback等 -->
+             默认使用java.util.logging(JUL)日志实现, 可自定义日志实现log4j, logback等 -->
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
