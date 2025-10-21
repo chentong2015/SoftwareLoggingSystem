@@ -1,0 +1,5 @@
+async\LogbackAsync.class
+verbose\VerboseLoggerFactory.class
+verbose\VerboseLoggerTest.class
+system\property\LogbackSystemProperty.class
+verbose\inactive\InactiveLogger.class

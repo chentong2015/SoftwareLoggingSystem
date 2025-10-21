@@ -16,6 +16,6 @@ public class LoggerMessageTest {
         LoggingEvent firstLogEntry = appender.getLog().get(0);
         Assertions.assertEquals(firstLogEntry.getLevel(), Level.INFO);
         Assertions.assertEquals(firstLogEntry.getMessage(), "Test");
-        Assertions.assertEquals(firstLogEntry.getLoggerName(), "org.example.main.MyProjectClass");
+        Assertions.assertEquals(firstLogEntry.getLoggerName(), "org.example.main.LoggerMessageClass");
     }
 }

@@ -1,0 +1,4 @@
+Oct 21, 2025 3:08:57 PM com.commons.logging.DemoFileHandler main
+WARNING: warning log file
+Oct 21, 2025 3:08:57 PM com.commons.logging.DemoFileHandler main
+SEVERE: severe log file

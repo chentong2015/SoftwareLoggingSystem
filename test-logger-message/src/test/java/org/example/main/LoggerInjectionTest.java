@@ -10,25 +10,18 @@ import org.junit.jupiter.api.Test;
 
 public class LoggerInjectionTest {
 
-    private CustomAppender customAppender;
     private final Logger logger = Logger.getLogger("LoggerInjectionTest");
-
-    @BeforeEach
-    public void setup() {
-        this.customAppender = new CustomAppender();
-        this.logger.addAppender(this.customAppender);
-    }
-
-    @AfterEach
-    public void cleanup() {
-        this.logger.removeAppender(this.customAppender);
-    }
 
     @Test
     public void testInjectionLoggerMessage() {
+        CustomAppender customAppender = new CustomAppender();
+        this.logger.addAppender(customAppender);
+
+        // TODO. 注入当前用于测试的Logger日志器
         LoggerInjectionClass injectionClass = new LoggerInjectionClass("name", "url", this.logger);
         injectionClass.testLogMessage();
 
+        // TODO. 通过Logger日志去的Appender来获取输出的日志信息
         LoggingEvent logEvent1 = customAppender.getLog().get(0);
         Assertions.assertEquals(logEvent1.getLevel(), Level.INFO);
         Assertions.assertEquals(logEvent1.getMessage(), "info message");
@@ -38,5 +31,7 @@ public class LoggerInjectionTest {
         Assertions.assertEquals(logEvent2.getLevel(), Level.DEBUG);
         Assertions.assertEquals(logEvent2.getMessage(), "debug");
         Assertions.assertEquals(logEvent2.getLoggerName(), "LoggerInjectionTest");
+
+        this.logger.removeAppender(customAppender);
     }
 }

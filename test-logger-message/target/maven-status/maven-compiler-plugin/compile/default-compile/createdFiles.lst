@@ -1,0 +1,3 @@
+org\example\main\LoggerInjectionClass.class
+org\example\main\CustomAppender.class
+org\example\main\LoggerMessageClass.class

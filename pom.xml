@@ -11,7 +11,6 @@
 
     <modules>
         <module>log4j-api-core</module>
-        <module>slf4j-api</module>
         <module>slf4j-commons-logging</module>
         <module>slf4j-logback-classic</module>
         <module>slf4j-logback-classic-test</module>

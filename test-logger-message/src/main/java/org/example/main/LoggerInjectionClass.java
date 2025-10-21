@@ -2,6 +2,7 @@ package org.example.main;
 
 import org.apache.log4j.Logger;
 
+// TODO. 提供特定的构造器注入参数，提供测试扩展，检测日志输出
 public class LoggerInjectionClass {
 
     private final String name;
@@ -12,7 +13,6 @@ public class LoggerInjectionClass {
         this(name, "demo.com/testing", Logger.getLogger("test"));
     }
 
-    // TODO. 提供特定的构造器注入参数，提供测试扩展，检测日志输出
     // @VisibleForTesting
     // - 自动注入要测试的url(改变发送请求的target)
     // - 注入自定义的Logger, injectLogger中包含自定义的CustomAppender

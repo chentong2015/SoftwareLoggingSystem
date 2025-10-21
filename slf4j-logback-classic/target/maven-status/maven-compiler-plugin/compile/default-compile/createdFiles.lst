@@ -1,0 +1,3 @@
+logback\BaseLogback.class
+logback\CustomLoggerFactory.class
+logback\CustomLogContext.class
